@@ -37,8 +37,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //本地依赖代码使用
-    implementation project(':use')
+//    implementation project(':use')
 
     //远程依赖使用
-//    implementation 'com.github.arksjs:NpUse:v0.0.2'
+    implementation 'com.github.arksjs:NpUse:v0.0.3'
 }

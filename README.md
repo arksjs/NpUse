@@ -1,4 +1,4 @@
-
+![](https://jitpack.io/v/arksjs/NpUse.svg)](https://jitpack.io/#arksjs/NpUse)
 # NP Android 接入文档
 
 ## 安装 SDK
@@ -15,7 +15,7 @@ repositories {
 ### 2. 需要依赖的 module 的 `build.gradle` 添加依赖
 
 ```gradle
-implementation 'com.github.arksjs:NpUse:v0.0.2'
+implementation 'com.github.arksjs:NpUse:v0.0.3'
 ```
 
 ## 集成
