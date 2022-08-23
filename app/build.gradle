@@ -40,5 +40,5 @@ dependencies {
     implementation project(':use')
 
     //远程依赖使用
-//    implementation 'com.github.arksjs:NpUse:v1.0.2'
+//    implementation 'com.github.arksjs:NpUse:v0.0.2'
 }
