@@ -1,4 +1,4 @@
-![](https://jitpack.io/v/arksjs/NpUse.svg)](https://jitpack.io/#arksjs/NpUse)
+[![](https://jitpack.io/v/arksjs/NpUse.svg)](https://jitpack.io/#arksjs/NpUse)
 # NP Android 接入文档
 
 ## 安装 SDK
@@ -66,7 +66,6 @@ try {
 
 // 上报事件
 GreeNp.trackEvent("event_name", json);  // 属性为 JSONObject
-GreeNp.trackEvent("event_name", "1");   // 属性为 stirng
 GreeNp.trackEvent("event_name");        // 无属性
 ```
 
