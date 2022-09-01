@@ -3,7 +3,7 @@
     package="com.lyentech.use">
 
     <application
-        android:name=".NUApp"
+        android:name="com.lyentech.npuse.NUApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="${app_name}"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NpUse">
         <activity
-            android:name=".MainActivity"
+            android:name="com.lyentech.npuse.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

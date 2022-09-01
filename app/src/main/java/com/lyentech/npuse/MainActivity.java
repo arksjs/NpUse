@@ -1,12 +1,12 @@
-package com.lyentech.use;
+package com.lyentech.npuse;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.lyentech.sdk.GreeNp;
+import com.lyentech.use.R;
 
 import org.json.JSONObject;
 

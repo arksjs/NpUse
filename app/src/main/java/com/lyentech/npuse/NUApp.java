@@ -1,4 +1,4 @@
-package com.lyentech.use;
+package com.lyentech.npuse;
 
 import android.app.Application;
 
