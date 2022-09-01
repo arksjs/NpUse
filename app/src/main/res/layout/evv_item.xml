@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/et_evv_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_edit_bg"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:gravity="center_vertical"
+        android:hint="请输入属性唯一标识"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_attribute_value"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_evv_value"
+        android:layout_toStartOf="@id/sp_attribute"
+        android:background="@drawable/ic_edit_bg"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:gravity="center_vertical"
+        android:hint="属性值"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/sp_attribute"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/et_evv_value"
+        android:entries="@array/search_attribute_value"
+        android:gravity="center_vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/et_attribute_value"/>
+
+</RelativeLayout>
