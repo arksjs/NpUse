@@ -6,7 +6,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.lyentech.sdk.GreeNp;
-import com.lyentech.use.R;
 
 import org.json.JSONObject;
 
@@ -30,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 JSONObject js = new JSONObject();
                 try {
+
 //                    js.put("id", 3);
                     js.put("name", "tom");
 //                    js.put("can", true);
