@@ -28,13 +28,13 @@ implementation 'com.github.arksjs:NpUse:v0.0.3'
 
 ### 2. 初始化 SDK
 
-```java
+```
 public static void init(Application app, String appKey)
 ```
 
 如：
 
-```java
+```
 GreeNp.init(Application.this, "APP_KEY");
 ```
 
@@ -55,7 +55,7 @@ GreeNp.init(Application.this, "APP_KEY");
 
 使用方式：
 
-```java
+```
 JSONObject json = new JSONObject();
 try {
     json.put("id", 3);
@@ -73,7 +73,7 @@ GreeNp.trackEvent("event_name");        // 无属性
 
 获取系统或网站的访客搜索关键词数据。
 
-```java
+```
 GreeNp.trackSearch(searchWord)
 ```
 
@@ -83,6 +83,6 @@ GreeNp.trackSearch(searchWord)
 
 使用方式：
 
-```java
+```
 GreeNp.trackSearch('搜索词')
 ```
