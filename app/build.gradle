@@ -12,7 +12,46 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        flavorDimensions "gree", "np"
+    }
+
+    //多渠道打包
+    applicationVariants.all { variant ->   //配置默认包名写法
+        variant.outputs.all { output ->
+            def fileName = "v${variant.versionName}.${defaultConfig.versionCode}_np_${variant.productFlavors[0].name}_${variant.productFlavors[1].name}_${buildType.name}.apk"
+            def outFile = output.outputFile
+            if (outFile != null && outFile.name.endsWith('.apk')) {
+                outputFileName = new File(outFile.parent, fileName).getName()
+            }
+        }
+    }
+
+    productFlavors {
+        gree {
+            dimension "gree"
+            buildConfigField "String", "FLAVOR_NAME", "\"gree\""
+        }
+        npdev {
+            dimension "np"
+            buildConfigField "String", "FLAVOR_NAME", "\"npdev\""
+            manifestPlaceholders = [
+                    app_name: "dev_np"
+            ]
+        }
+        npque {
+            dimension "np"
+            buildConfigField "String", "FLAVOR_NAME", "\"npque\""
+            manifestPlaceholders = [
+                    app_name: "que_np"
+            ]
+        }
+        nppro {
+            dimension "np"
+            buildConfigField "String", "FLAVOR_NAME", "\"nppro\""
+            manifestPlaceholders = [
+                    app_name: "pro_np"
+            ]
+        }
     }
 
     buildTypes {
