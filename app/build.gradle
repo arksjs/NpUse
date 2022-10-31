@@ -72,8 +72,7 @@ dependencies {
 
     //本地依赖代码使用
     implementation project(':use')
-
     //远程依赖使用
-//    implementation 'com.github.arksjs:NpUse-Android:v0.0.4.3'  //改仓库名后也能用
+//    implementation 'com.github.arksjs:NpUse-Android:v1.0.0'  //改仓库名后也能用
 
 }
