@@ -75,5 +75,4 @@ dependencies {
 
     //远程依赖使用
 //    implementation 'com.github.arksjs:NpUse-Android:v1.0.1'  //改仓库名后也能用
-
 }
