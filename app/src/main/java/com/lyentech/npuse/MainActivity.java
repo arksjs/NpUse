@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
+        GreeNp.setUID("NpUse_uid_mock_888");
         findViewById(R.id.tvEvent).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
