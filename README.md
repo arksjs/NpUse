@@ -15,7 +15,7 @@ repositories {
 ### 2. 需要依赖的 module 的 `build.gradle` 添加依赖
 
 ```gradle
-implementation 'com.github.arksjs:NpUse:v1.0.1'
+implementation 'com.github.arksjs:NpUse:v1.0.2'
 ```
 
 ## 集成
@@ -29,13 +29,13 @@ implementation 'com.github.arksjs:NpUse:v1.0.1'
 ### 2. 初始化 SDK
 
 ```
-public static void init(Application app, String appKey)
+public static void initSdk(Application app, String appKey)
 ```
 
 如：
 
 ```
-GreeNp.init(Application.this, "APP_KEY");
+GreeNp.initSdk(Application.this, "APP_KEY");
 ```
 
 ### 3. 查看日志输出
@@ -96,7 +96,7 @@ GreeNp.setUID(uid)
 
 | 参数       |   类型   | 必需 | 默认值 | 描述                                    |
 | ---------  | ------- | ---- | ----- | --------------------------------------- |
-| uid | String/int/long | 是 |       | 用户标识id，统计系统用户数 |
+| uid | String/int/long | 是 |       | 用户标识id，统计系统用户数，不超过 200 个字符 |
 
 使用方式：
 
