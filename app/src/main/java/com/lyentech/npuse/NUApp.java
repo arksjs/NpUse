@@ -8,6 +8,6 @@ public class NUApp extends Application {
    @Override
    public void onCreate() {
       super.onCreate();
-      GreeNp.init(this,"02EBA73C32A2AF47552FA411135E2CBA",true);
+      GreeNp.initSdk(this,"02EBA73C32A2AF47552FA411135E2CBA",true);
    }
 }
