@@ -20,10 +20,16 @@ implementation 'com.github.arksjs:NpUse:v1.0.5'
 
 ## 集成
 
-### 1. 在 `AndroidManifest.xml` 添加网络请求
+### 1. 在 `AndroidManifest.xml` 添加网络权限
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
+```
+
+#### 在 `Android12` 以上添加定时权限
+
+```xml
+<uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 ```
 
 ### 2. 初始化 SDK
