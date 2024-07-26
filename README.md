@@ -15,7 +15,7 @@ repositories {
 ### 2. 需要依赖的 module 的 `build.gradle` 添加依赖
 
 ```gradle
-implementation 'com.github.arksjs:NpUse:v1.1.1'
+implementation 'com.github.arksjs:NpUse:v1.2.0'
 ```
 
 ## 集成
@@ -43,13 +43,13 @@ public static void initSdk(Application app, String appKey)
 如：
 
 ```
-GreeNp.initSdk(Application.this, "APP_KEY");
+GreeNp.init(Application.this, "APP_KEY");
 ```
 
 #### 2.2 多ak上报
 
 ```
-public static void initSdk(Application application, String appKey, ArrayList<String> appKeyArray, ArrayList<String> eventMultiArray)
+public static void init(Application application, String appKey, ArrayList<String> appKeyArray, ArrayList<String> eventMultiArray)
 ```
 
 如：
@@ -57,7 +57,7 @@ public static void initSdk(Application application, String appKey, ArrayList<Str
 ```
 ArrayList<String> appKeyArr = new ArrayList<>();
 ArrayList<String> eventArr = new ArrayList<>();
-GreeNp.initSdk(Application.this, "APP_KEY", appKeyArr, eventArr);
+GreeNp.init(Application.this, "APP_KEY", appKeyArr, eventArr);
 ```
 
 ### 3. 查看日志输出

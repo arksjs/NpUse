@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 //上报事件video_source
 //                GreeNp.trackEvent("video_source", js.toString());//例1
 //                GreeNp.trackEvent("video_source", "1");//例2
-                GreeNp.trackEvent("video_source", "xiaomi");
+                GreeNp.trackEvent("video_source", "xiaomi/ssss//bbbb");
 //                GreeNp.trackEvent("video_source");//例3
             }
         });
