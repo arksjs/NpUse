@@ -33,16 +33,13 @@ public class MainActivity extends AppCompatActivity {
                 try {
 
 //                    js.put("id", 3);
-                    js.put("name", "tom");
 //                    js.put("can", true);
-                    js.put("s", "g");
+                    js.put("log", "g//h");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
                 //上报事件video_source
-//                GreeNp.trackEvent("video_source", js.toString());//例1
-//                GreeNp.trackEvent("video_source", "1");//例2
-                GreeNp.trackEvent("video_source", "xiaomi/ssss//bbbb");
+                GreeNp.trackEvent("android_log", js.toString());
 //                GreeNp.trackEvent("video_source");//例3
             }
         });

@@ -33,7 +33,7 @@ android {
 
 dependencies {
 //    api files('libs/proguard_nplib-1.1.1.jar')
-    api files('libs/proguard_nplib-1.1.4.jar')
+    api files('libs/proguard_nplib-1.2.0.jar')
 }
 
 afterEvaluate {
@@ -44,7 +44,7 @@ afterEvaluate {
                 groupId = 'com.lyentech.np' //groupId 随便取
                 artifactId = 'np'  //artifactId 随便取
 //                version = '1.1.1'
-                version = '1.1.4'
+                version = '1.2.0'
             }
         }
     }
